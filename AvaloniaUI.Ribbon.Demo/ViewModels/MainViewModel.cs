@@ -3,6 +3,7 @@
 using Avalonia.Controls;
 using Avalonia.Layout;
 
+using System.Reflection;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
@@ -65,11 +66,11 @@ public partial class MainViewModel : ViewModelBase
         switch (value)
         {
             case true:
-                App.ThemeManager.Switch(0);
+                try { var tmProp = typeof(App).GetProperty("ThemeManager", BindingFlags.Public | BindingFlags.Static); var tm = tmProp?.GetValue(null); tm?.GetType().GetMethod("Switch")?.Invoke(tm, new object[] { 0 }); } catch { }
                 break;
 
             case false:
-                App.ThemeManager.Switch(1);
+                try { var tmProp = typeof(App).GetProperty("ThemeManager", BindingFlags.Public | BindingFlags.Static); var tm = tmProp?.GetValue(null); tm?.GetType().GetMethod("Switch")?.Invoke(tm, new object[] { 1 }); } catch { }
                 break;
         }
     }

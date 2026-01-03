@@ -21,14 +21,7 @@
 
 		<StyleInclude Source="avares://Avalonia.Themes.Fluent/FluentTheme.xaml" />
 		<FluentTheme />
-		<OnPlatform>
-			<OnPlatform.Windows>
-				<StyleInclude Source="avares://AvaloniaUI.Ribbon.Desktop/Styles/Fluent/AvaloniaRibbon.axaml" />
-			</OnPlatform.Windows>
-			<OnPlatform.Default>
-				<StyleInclude Source="avares://AvaloniaUI.Ribbon/Styles/Fluent/AvaloniaRibbon.axaml" />
-			</OnPlatform.Default>
-		</OnPlatform>
+		<StyleInclude Source="avares://AvaloniaUI.Ribbon.Desktop/Styles/Fluent/AvaloniaRibbon.axaml" />
 		<!--
         <themes:MaterialTheme BaseTheme="Dark" PrimaryColor="Purple" SecondaryColor="Lime" />
         -->
