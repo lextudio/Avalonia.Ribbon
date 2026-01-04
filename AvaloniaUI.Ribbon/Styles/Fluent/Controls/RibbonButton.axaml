@@ -89,8 +89,13 @@
                                 <ContentPresenter Content="{TemplateBinding LargeIcon}" DockPanel.Dock="Top"
                                                   Width="32"
                                                   Height="32" Foreground="{TemplateBinding Foreground}" />
-                                <ContentPresenter Content="{TemplateBinding Content}" Margin="0,3,0,0"
-                                                  VerticalAlignment="Stretch" Foreground="{TemplateBinding Foreground}" />
+                                <ContentPresenter Content="{TemplateBinding Content}"
+                                                  Margin="0,3,0,0"
+                                                  VerticalAlignment="Stretch"
+                                                  HorizontalAlignment="Stretch"
+                                                  Foreground="{TemplateBinding Foreground}"
+                                                  TextBlock.TextWrapping="Wrap"
+                                                  TextBlock.TextAlignment="Center" />
                             </DockPanel>
                         </Border>
                     </DataValidationErrors>

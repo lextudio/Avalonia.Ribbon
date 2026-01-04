@@ -30,7 +30,7 @@
 
 	<Style Selector="local|RibbonDropDownButton[Size=Large]">
 		<Setter Property="Padding" Value="9" />
-		<Setter Property="MaxWidth" Value="66" />
+		<Setter Property="MaxWidth" Value="{StaticResource MaxControlWidth}" />
 		<Setter Property="Template">
 			<ControlTemplate>
 				<Border Classes="RibbonButtonBackgroundBorder">
@@ -47,16 +47,17 @@
                         Foreground="{TemplateBinding Foreground}">
 						<StackPanel Orientation="Vertical">
 							<ContentPresenter Margin="0,0,0,4" Content="{TemplateBinding LargeIcon}" />
-							<StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-								<ContentPresenter Content="{TemplateBinding Content}" />
+							<Grid ColumnDefinitions="*,Auto" HorizontalAlignment="Stretch">
+								<ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" />
 								<Path
+                                    Grid.Column="1"
                                     Margin="4,0,0,0"
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
                                     Data="M 0 0 L 3 3 L 6 0"
                                     Stroke="{Binding (TextBlock.Foreground), RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ContentPresenter}}"
                                     StrokeThickness="1" />
-							</StackPanel>
+							</Grid>
 						</StackPanel>
 						<Button.Flyout>
 							<Flyout FlyoutPresenterClasses="PaddingLess" ShowMode="TransientWithDismissOnPointerMoveAway">
@@ -118,6 +119,11 @@
 				</Border>
 			</ControlTemplate>
 		</Setter>
+	</Style>
+	<Style Selector="local|RibbonDropDownButton[Size=Large] /template/ ContentPresenter TextBlock">
+		<Setter Property="TextWrapping" Value="Wrap" />
+		<Setter Property="TextAlignment" Value="Center" />
+		<Setter Property="VerticalAlignment" Value="Center" />
 	</Style>
 	<Style Selector="local|RibbonDropDownButton[Size=Small]">
 		<Setter Property="Width" Value="42" />

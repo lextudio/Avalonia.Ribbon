@@ -495,7 +495,7 @@
                             KeyTip.KeyTipKeys="S">
 							<SplitButtonControl
                                 x:Name="RibbonSplitButton1"
-                                Content="Large"
+                                Content="Large Control"
                                 Icon="{DynamicResource Icon1}"
                                 LargeIcon="{DynamicResource Icon1Large}"
                                 QuickAccessIcon="{DynamicResource Icon1QuickAccess}"
@@ -584,7 +584,7 @@
                             Header="RibbonButtons"
                             KeyTip.KeyTipKeys="B">
 							<RibbonButton
-                                Content="Large"
+                                Content="Large Control"
                                 Icon="{DynamicResource Icon1}"
                                 KeyTip.KeyTipKeys="U"
                                 LargeIcon="{DynamicResource Icon1Large}"
@@ -615,7 +615,7 @@
                             Header="RibbonToggleButtons"
                             KeyTip.KeyTipKeys="T">
 							<RibbonToggleButton
-                                Content="Large"
+                                Content="Large Control"
                                 Icon="{DynamicResource Icon1}"
                                 KeyTip.KeyTipKeys="X"
                                 LargeIcon="{DynamicResource Icon1Large}"
@@ -647,7 +647,7 @@
                             KeyTip.KeyTipKeys="S">
 							<RibbonDropDownButton
                                 x:Name="LargeRibbonDropDownButton"
-                                Content="Large"
+                                Content="Large Control"
                                 Icon="{DynamicResource Icon1}"
                                 LargeIcon="{DynamicResource Icon1Large}"
                                 MaxSize="Large"
@@ -693,7 +693,7 @@
                                                 Fill="Red" />
 										</RibbonButton.Icon>
 									</RibbonButton>
-									<RibbonButton Content="Large" Size="Large">
+									<RibbonButton Content="Large Control" Size="Large">
 										<RibbonButton.LargeIcon>
 											<Rectangle
                                                 Width="16"

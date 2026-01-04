@@ -287,6 +287,11 @@
     <Style Selector="local|RibbonSplitButton:disabled /template/ Border.RibbonButtonBackgroundBorder">
         <Setter Property="Opacity" Value="{DynamicResource ThemeDisabledOpacity}" />
     </Style>
+    <Style Selector="local|RibbonSplitButton[Size=Large] /template/ ContentPresenter TextBlock">
+        <Setter Property="TextWrapping" Value="Wrap" />
+        <Setter Property="TextAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
 
     <Style
         Selector="local|RibbonSplitButton /template/ Button#RibbonSplitButtonTopButton:not(:pointerover):not(:pressed)">

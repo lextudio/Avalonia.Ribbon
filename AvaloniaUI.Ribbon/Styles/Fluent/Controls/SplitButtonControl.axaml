@@ -52,8 +52,11 @@
                         <Border Classes="RibbonToggleButtonBackgroundBorder">
                             <DockPanel VerticalAlignment="Stretch" HorizontalAlignment="Center">
                                 <ContentPresenter Content="{TemplateBinding LargeIcon}" DockPanel.Dock="Top" />
-                                <ContentPresenter Content="{TemplateBinding Content}" Margin="0,3,0,0"
-                                                  VerticalAlignment="Stretch" />
+                                <ContentPresenter Content="{TemplateBinding Content}"
+                                                  Margin="0,3,0,0"
+                                                  VerticalAlignment="Stretch"
+                                                  TextBlock.TextWrapping="Wrap"
+                                                  TextBlock.TextAlignment="Center" />
                             </DockPanel>
                         </Border>
                     </Button>
@@ -307,6 +310,5 @@
             <Setter Property="Tag" Value="checked-flyout-open" />
         </Style>
     </ControlTheme>
-
 
 </ResourceDictionary>

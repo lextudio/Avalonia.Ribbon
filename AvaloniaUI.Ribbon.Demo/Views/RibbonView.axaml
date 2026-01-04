@@ -391,12 +391,12 @@
                     Header="SplitButtonControls"
                     KeyTip.KeyTipKeys="S">
 					<SplitButtonControl
-                        x:Name="RibbonSplitButton1"
-                        Content="Large"
-                        Icon="{DynamicResource Icon1}"
-                        LargeIcon="{DynamicResource Icon1Large}"
-                        QuickAccessIcon="{DynamicResource Icon1QuickAccess}"
-                        Size="Large">
+						x:Name="RibbonSplitButton1"
+						Content="Large Control"
+						Icon="{DynamicResource Icon1}"
+						LargeIcon="{DynamicResource Icon1Large}"
+						QuickAccessIcon="{DynamicResource Icon1QuickAccess}"
+						Size="Large">
 						<SplitButtonControl.Flyout>
 							<MenuFlyout Placement="Bottom">
 								<MenuItem Header="Item 1">
@@ -432,12 +432,12 @@
                     Header="RibbonButtons"
                     KeyTip.KeyTipKeys="B">
 					<RibbonButton
-                        Content="Large"
-                        Icon="{DynamicResource Icon1}"
-                        LargeIcon="{DynamicResource Icon1Large}"
-                        MaxSize="Large"
-                        MinSize="Large"
-                        QuickAccessIcon="{DynamicResource Icon1QuickAccess}" />
+						Content="Large Control"
+						Icon="{DynamicResource Icon1}"
+						LargeIcon="{DynamicResource Icon1Large}"
+						MaxSize="Large"
+						MinSize="Large"
+						QuickAccessIcon="{DynamicResource Icon1QuickAccess}" />
 					<RibbonButton
                         Content="Medium"
                         Icon="{DynamicResource Icon2}"
@@ -459,12 +459,12 @@
                     Header="RibbonToggleButtons"
                     KeyTip.KeyTipKeys="T">
 					<RibbonToggleButton
-                        Content="Large"
-                        Icon="{DynamicResource Icon1}"
-                        LargeIcon="{DynamicResource Icon1Large}"
-                        MaxSize="Large"
-                        MinSize="Large"
-                        QuickAccessIcon="{DynamicResource Icon1QuickAccess}" />
+						Content="Large Control"
+						Icon="{DynamicResource Icon1}"
+						LargeIcon="{DynamicResource Icon1Large}"
+						MaxSize="Large"
+						MinSize="Large"
+						QuickAccessIcon="{DynamicResource Icon1QuickAccess}" />
 					<RibbonToggleButton
                         Content="Medium"
                         Icon="{DynamicResource Icon2}"
@@ -487,13 +487,13 @@
                     Header="RibbonDropDownButtons"
                     KeyTip.KeyTipKeys="S">
 					<RibbonDropDownButton
-                        x:Name="LargeRibbonDropDownButton"
-                        Content="Large"
-                        Icon="{DynamicResource Icon1}"
-                        LargeIcon="{DynamicResource Icon1Large}"
-                        MaxSize="Large"
-                        MinSize="Large"
-                        QuickAccessIcon="{DynamicResource Icon1QuickAccess}">
+						x:Name="LargeRibbonDropDownButton"
+						Content="Large Control"
+						Icon="{DynamicResource Icon1}"
+						LargeIcon="{DynamicResource Icon1Large}"
+						MaxSize="Large"
+						MinSize="Large"
+						QuickAccessIcon="{DynamicResource Icon1QuickAccess}">
 						<RibbonDropDownItem
                             Command="{Binding OnClickCommand}"
                             CommandParameter="RibbonDropDownButton Item 1"
@@ -534,12 +534,12 @@
                                         Fill="Red" />
 								</RibbonButton.Icon>
 							</RibbonButton>
-							<RibbonButton Content="Large" Size="Large">
+							<RibbonButton Content="Large Control" Size="Large">
 								<RibbonButton.LargeIcon>
 									<Rectangle
-                                        Width="16"
-                                        Height="16"
-                                        Fill="Purple" />
+										Width="16"
+										Height="16"
+										Fill="Purple" />
 								</RibbonButton.LargeIcon>
 							</RibbonButton>
 						</RibbonDropDownItemsPresenter>
