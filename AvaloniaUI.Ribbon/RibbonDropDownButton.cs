@@ -154,10 +154,10 @@ public class RibbonDropDownButton : ItemsControl, IRibbonControl, ICanAddToQuick
                     };
                 }
             }
-        }
 
-        _primaryButton.Click += PrimaryButton_Click;
-        _primaryButton.AddHandler(PointerPressedEvent, PrimaryButton_PreviewPointerPressed, RoutingStrategies.Tunnel);
+            _primaryButton.Click += PrimaryButton_Click;
+            _primaryButton.AddHandler(PointerPressedEvent, PrimaryButton_PreviewPointerPressed, RoutingStrategies.Tunnel);
+        }
     }
 
     /// <summary>

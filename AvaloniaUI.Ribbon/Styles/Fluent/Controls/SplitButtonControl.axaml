@@ -146,15 +146,15 @@
                             HorizontalAlignment="Stretch"
                             HorizontalContentAlignment="Center"
                             VerticalContentAlignment="Center"
-                            VerticalAlignment="Top"
+                            VerticalAlignment="Stretch"
                             BorderThickness="0"
                             Focusable="False"
                             KeyboardNavigation.IsTabStop="False">
                         <Border Classes="RibbonToggleButtonBackgroundBorder">
-                            <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch"
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center"
                                         HorizontalAlignment="Center">
-                                <ContentPresenter Content="{TemplateBinding Icon}" />
-                                <ContentPresenter Content="{TemplateBinding Content}" Margin="3,0,0,0" />
+                                <ContentPresenter Content="{TemplateBinding Icon}" VerticalAlignment="Center" />
+                                <ContentPresenter Content="{TemplateBinding Content}" Margin="3,0,0,0" VerticalAlignment="Center" />
                             </StackPanel>
                         </Border>
                     </Button>

@@ -104,7 +104,7 @@
         <Setter Property="Template">
             <ControlTemplate>
                 <Border Classes="RibbonButtonBackgroundBorder">
-                    <DockPanel>
+                    <DockPanel VerticalAlignment="Center">
                         <ToggleButton
                             Name="toggle"
                             Padding="{TemplateBinding Padding}"
@@ -159,9 +159,9 @@
                             BorderThickness="0"
                             Command="{TemplateBinding Command}"
                             CommandParameter="{TemplateBinding CommandParameter}">
-                            <StackPanel Orientation="Horizontal">
-                                <ContentPresenter Content="{TemplateBinding Icon}" />
-                                <ContentPresenter Margin="3,0,0,0" Content="{TemplateBinding Content}" />
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <ContentPresenter Content="{TemplateBinding Icon}" VerticalAlignment="Center" />
+                                <ContentPresenter Margin="3,0,0,0" Content="{TemplateBinding Content}" VerticalAlignment="Center" />
                             </StackPanel>
                         </Button>
                     </DockPanel>
